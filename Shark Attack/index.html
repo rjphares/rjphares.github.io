@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="canvas1"></canvas>
+
+  <!-- scuba diver -->
+  <img id="diver" src="images/Scuba-144x72.png">
+
+  <!-- shark sprites -->
+  <img id="shark_relaxed" src="images/Shark_Mouth_Open_Relaxed_Eye-192x96.png">
+  <img id="shark_attack" src="images/Shark_Mouth_Open-192x96.png">
+
+  <!-- letters -->
+  <img id="A" src="images/A-30x42.png">
+  <img id="B" src="images/B-30x42.png">
+  <img id="C" src="images/C-30x42.png">
+  <img id="D" src="images/D-30x42.png">
+  <img id="E" src="images/E-30x42.png">
+  <img id="F" src="images/F-30x42.png">
+  <img id="G" src="images/G-30x42.png">
+  <img id="H" src="images/H-30x42.png">
+  <img id="I" src="images/I-30x42.png">
+  <img id="J" src="images/J-30x42.png">
+  <img id="K" src="images/K-30x42.png">
+  <img id="L" src="images/L-30x42.png">
+  <img id="M" src="images/M-30x42.png">
+  <img id="N" src="images/N-30x42.png">
+  <img id="O" src="images/O-30x42.png">
+  <img id="P" src="images/P-30x42.png">
+  <img id="Q" src="images/Q-30x42.png">
+  <img id="R" src="images/R-30x42.png">
+  <img id="S" src="images/S-30x42.png">
+  <img id="T" src="images/T-30x42.png">
+  <img id="U" src="images/U-30x42.png">
+  <img id="V" src="images/V-30x42.png">
+  <img id="W" src="images/W-30x42.png">
+  <img id="X" src="images/X-30x42.png">
+  <img id="Y" src="images/Y-30x42.png">
+  <img id="Z" src="images/Z-30x42.png">
+
+  <!-- sounds -->
+  <audio id="background" src="audio/mixkit-diving-sea-ambience-1205.wav"></audio>
+  <audio id="alarm" src="audio/Alarm.wav"></audio>
+  <audio id="death" src="audio/death.wav"></audio>
+
+  <div id="grid" class="grid-container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>  
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      <div>
+        <div id="new" class="new">New Game</div>
+        <div id="resume" class="resume">Resume Game</div>
+        <div id="skip" class="skip">Skip Level</div>
+      </div>
+    </div>
+    <div class="grid-item"></div>  
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
