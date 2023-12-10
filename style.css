@@ -7,3 +7,21 @@ h3 {
 .no-bullets {
   list-style: none;
 }
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+}
