@@ -8,42 +8,37 @@
   color: white;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-}
 nav {
-  background-color: darkgreen;
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  flex: 1;
-  height: 100vh; /* Full height of the viewport */
-  justify-content: space-around; /* Distribute links evenly */
+  justify-content: space-between;
 }
 
 nav a {
-  color: white;
+  font-weight: bold;
   font-size: 20px;
-  text-align: center; /* Center text horizontally */
+  flex-basis: 25%;
+  text-align: center;
   box-sizing: border-box;
+  border: 3px solid black;
   padding: 15px 0;
-  display: flex;
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  flex: 1; /* Make each link take up equal space */
-  align-self: stretch; /* Stretch links to take full width */
+  text-decoration: none;
+}
+
+nav a:nth-child(n + 2) {
+  border-left: 0;
 }
 
 nav a:link,
 nav a:visited,
 nav a:active {
   text-decoration: none;
-  /* color: #5cb338; */
+  color: #5cb338;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #5cb338;
+  color: white;
 }
 
 .header-img1 {
@@ -96,8 +91,6 @@ footer {
   font-size: 16px;
   text-align: center;
   padding: 15px 0;
-  width: 100%;
-  clear: both;
 }
 
 ul {
@@ -168,33 +161,28 @@ code {
   text-decoration: underline;
 }
 
-article {
-  background-color: #5cb338;
-  box-sizing: border-box;
-  flex: 1;
-  height: 100%;
+.slideshow {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+  display: block;
+  margin: 0 auto;
+  height: 240px;
+  width: 320px;
+  overflow: hidden;
+  border: 1px solid #333;
+  position: relative;
 }
 
-/* .article-header {
+.slideshow img {
   position: absolute;
-  left: -1200px;
-  transition-duration: 5s;
-  transition-property: left;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3s;
 }
 
-body.loaded .article-header {
-  left: 0;
-}  */
-
-/* .article-header {
-  animation: move 5s forwards;
+.slideshow img.active {
+  opacity: 1;
 }
-
-@keyframes move {
-  0% {
-    transform: translateX(-600px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */

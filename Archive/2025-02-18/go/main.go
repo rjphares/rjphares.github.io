@@ -18,7 +18,7 @@ func main() {
 	defer file.Close()
 	tpl.Execute(file, nil)
 	//parse the template
-	tpl = template.Must(template.ParseFiles("goarchive.gohtml", "head.gohtml", "nav.gohtml", "footer.gohtml"))
+	tpl = template.Must(template.ParseFiles("goarchive.gohtml", "head.gohtml", "nav.gohtml", "footer.gohtml", "slideshow.gohtml"))
 	// create file archive.html and write to archive.html
 	file, err = os.Create("../archive.html")
 	if err != nil {
@@ -33,7 +33,6 @@ func main() {
 	}
 	// create slice of archive
 	archives := []archive{
-		{"Version 7", "https://rjphares.github.io/Archive/2025-02-18/index.html", "2025-02-18"},
 		{"Version 6", "https://rjphares.github.io/Archive/2025-02-13/index.html", "2025-02-13"},
 		{"Version 5", "https://rjphares.github.io/Archive/2025-02-11/index.html", "2025-02-11"},
 		{"Version 4", "https://rjphares.github.io/Archive/2025-02-05/index.html", "2025-02-05"},
