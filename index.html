@@ -5,17 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shark Attack - Title Screen</title>
+    <!-- Local Fonts -->
+    <style>
+      @font-face {
+        font-family: "Ocean Rush";
+        src: url("fonts/Ocean Rush.otf") format("opentype");
+        /* font-weight: normal;
+        font-style: normal; */
+      }
+
+      @font-face {
+        font-family: "Ocean Rush Slant";
+        src: url("fonts/Ocean Rush Slant.otf") format("opentype");
+        /* font-weight: normal;
+        font-style: italic; */
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="titleScreenContainer">
-      <section id="row5" class="titleScreenRows">
-        <button id="startButton" class="titleScreenButton">Start Game</button>
+      <section id="row5" class="titleScreenRows">Shark Attack</section>
+      <section id="row4" class="titleScreenRows">
+        <button id="startButton" class="titleScreenButton">Start</button>
       </section>
-      <section id="row4" class="titleScreenRows"></section>
-      <section id="row3" class="titleScreenRows"></section>
-      <section id="row2" class="titleScreenRows"></section>
-      <section id="row1" class="titleScreenRows"></section>
+      <section id="row3" class="titleScreenRows">
+        <button id="makeLevelsButton" class="titleScreenButton">
+          Make Levels
+        </button>
+      </section>
+      <section id="row2" class="titleScreenRows">
+        <button id="uploadLevelsButton" class="titleScreenButton">
+          Upload Levels
+        </button>
+      </section>
+      <section id="row1" class="titleScreenRows">
+        <button id="exitButton" class="titleScreenButton">Exit</button>
+      </section>
       <section id="row0" class="titleScreenRows"></section>
     </section>
     <script src="script.js"></script>

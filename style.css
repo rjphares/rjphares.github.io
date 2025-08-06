@@ -6,6 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Ocean Rush Slant", serif;
+  /* font-size: 72px; */
 }
 
 /* Game container styling */
@@ -27,34 +29,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 72px; /* This will inherit to button */
 }
 
-#row0 {
-  background-color: #ff6b6b;
-}
-#row1 {
-  background-color: #45b7d1;
-}
-#row2 {
-  background-color: #96ceb4;
-}
-#row3 {
-  background-color: #ffeaa7;
+#row5 {
+  background-color: #00ccff;
 }
 #row4 {
-  background-color: #dda0dd;
+  background-color: #00a3ff;
 }
-#row5 {
-  background-color: #f0e68c;
+#row3 {
+  background-color: #007aff;
+}
+#row2 {
+  background-color: #0052ff;
+}
+#row1 {
+  background-color: #0000ff;
+}
+#row0 {
+  background-color: #0700c4;
 }
 
 /* Button styling */
 .titleScreenButton {
   width: 640px;
   height: 100px;
-  font-size: 72px;
-  color: white;
-  background-color: #333;
+  font-family: inherit; /* Explicitly inherit from body */
+  font-size: inherit; /* Inherit font size from body */
+  color: inherit; /* Inherit color from body */
+  background-color: darkblue;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -62,8 +67,21 @@ body {
 }
 
 .titleScreenButton:hover {
-  background-color: #555;
+  background-color: lightblue;
 }
+
+#startButton {
+}
+
+#makeLevelsButton {
+}
+
+#uploadLevelsButton {
+}
+
+#exitButton {
+}
+
 /* Footer styling */
 /* footer {
   text-align: center;
