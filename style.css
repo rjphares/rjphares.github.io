@@ -1,0 +1,57 @@
+/* Add body styling for flexbox centering */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game container styling */
+.titleScreenContainer {
+  width: 1280px;
+  height: 720px;
+  /* background-color: #f0f0f0; */
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title screen styling */
+.titleScreen {
+  height: 120px;
+  width: 100%;
+  /*border-bottom: 1px solid #ccc;*/
+  position: relative;
+}
+
+#row0 {
+  background-color: #ff6b6b;
+}
+#row1 {
+  background-color: #45b7d1;
+}
+#row2 {
+  background-color: #96ceb4;
+}
+#row3 {
+  background-color: #ffeaa7;
+}
+#row4 {
+  background-color: #dda0dd;
+}
+#row5 {
+  background-color: #f0e68c;
+}
+
+/* Footer styling */
+/* footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+} */
