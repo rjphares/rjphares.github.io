@@ -55,7 +55,7 @@ body {
 /* Button styling */
 .titleScreenButton {
   width: 50vw;
-  height: 10vh;
+  height: 12.5vh;
   font-family: inherit; /* Explicitly inherit from body */
   font-size: inherit; /* Inherit font size from body */
   color: inherit; /* Inherit color from body */
