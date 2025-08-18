@@ -27,7 +27,7 @@
     <section class="titleScreenContainer">
       <section id="row5" class="titleScreenRows">Shark Attack</section>
       <section id="row4" class="titleScreenRows">
-        <button id="startButton" class="titleScreenButton">Start</button>
+        <button id="startButton" class="titleScreenButton">Start Game</button>
       </section>
       <section id="row3" class="titleScreenRows">
         <button id="makeLevelsButton" class="titleScreenButton">
@@ -44,12 +44,16 @@
       </section>
       <section id="row0" class="titleScreenRows"></section>
     </section>
-    <script src="script.js"></script>
     <iframe
+      id="mainFrame"
+      style="width: 100vw; height: 80vh; border: none; display: none"
+    ></iframe>
+    <script src="script.js"></script>
+    <!-- <iframe
       id="gameFrame"
       src="main.html"
       style="border: none; width: 800px; height: 600px"
-    ></iframe>
+    ></iframe> -->
   </body>
   <!-- <footer>
     <p>&copy; 2025 Shark Attack</p>
